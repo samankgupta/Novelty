@@ -2,6 +2,8 @@ import React from "react";
 import homeimage from "../assets/images/chessbg.jpg"
 import { useNavigate } from 'react-router-dom';
 import { Helmet } from "react-helmet"
+import { NotificationContainer, NotificationManager } from 'react-notifications';
+import 'react-notifications/lib/notifications.css';
 
 const Stake = () => {
 
@@ -19,7 +21,7 @@ const Stake = () => {
             await window.ethereum.enable()
         }
         else {
-            window.alert('Non-Ethereum browser detected. You should consider trying MetaMask!')
+            alert('Non-Ethereum browser detected. You should consider trying MetaMask!')
         }
         const web3 = new window.Web3(window.ethereum)
         const accounts = await web3.eth.getAccounts()
@@ -48,30 +50,20 @@ const Stake = () => {
         }
     }
 
-    console.log(account1Staked, account2Staked)
-
     const stakeAccount1 = async (e) => {
         e.preventDefault()
-        const web3 = new window.Web3(window.ethereum)
-        const res = await web3.eth.sendTransaction({ to: "0x962C3B2D6Decc54Bd482517c7284116160B0d84b", from: account1.account, value: account1Amount * 1000000000000000000 });
-        if (res) {
-            localStorage.setItem('account1', account1.account);
-            localStorage.setItem('account1amount', account1Amount);
-            setAccount1Staked(true);
-            alert("Account 1 Tokens Staked!")
-        }
+        localStorage.setItem('account1', account1.account);
+        localStorage.setItem('account1amount', account1Amount);
+        setAccount1Staked(true);
+        NotificationManager.success('Account 1 Tokens Staked!');
     }
 
     const stakeAccount2 = async (e) => {
         e.preventDefault()
-        const web3 = new window.Web3(window.ethereum)
-        const res = await web3.eth.sendTransaction({ to: "0x962C3B2D6Decc54Bd482517c7284116160B0d84b", from: account2.account, value: account2Amount * 1000000000000000000 });
-        if (res) {
-            localStorage.setItem('account2', account2.account);
-            localStorage.setItem('account2amount', account2Amount);
-            setAccount2Staked(true);
-            alert("Account 2 Tokens Staked!")
-        }
+        localStorage.setItem('account2', account2.account);
+        localStorage.setItem('account2amount', account2Amount);
+        setAccount2Staked(true);
+        NotificationManager.success('Account 2 Tokens Staked!');
     }
 
     return (
@@ -170,6 +162,7 @@ const Stake = () => {
                     <button onClick={() => navigate('/play/')} className="text-white text-lg font-medium rounded-xl mt-4 px-20 py-4 bg-gradient-to-r from-amber-600 to-amber-300 hover:from-amber-700 hover:to-amber-500 hover:shadow-2xl">Play Now</button>
                 </div>
                 : <></>}
+            <NotificationContainer />
         </div >
     );
 };
