@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+<h1 align="center">Novelty - The Chess Dapp ♚</h1>
+<p align="center">
+    <a href="https://noveltychess.netlify.app/">View Website</a>
+</p>
+<p align="center"><a href="https://noveltychess.netlify.app/"><img src="./src/assets/images/homepage.png" width="700"></a></p>
+<p align="center">Novelty is a Chess Dapp where both the players stake tokens of their choice at the beginning of the game and the winner takes it all. It also has an NFT Store where users can purchase NFTs of some of the best chess games ever.
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Technologies Used
 
-## Available Scripts
+<img src="https://img.shields.io/badge/-React-%2361DAFB?logo=react&logoColor=black&style=for-the-badge" alt="React" /><img src="https://img.shields.io/badge/-Tailwind CSS-%2306B6D4?logo=TailwindCSS&logoColor=white&style=for-the-badge" alt="Tailwind CSS" /><img src="https://img.shields.io/badge/-Netlify-%2300C7B7?logo=Netlify&logoColor=white&style=for-the-badge" alt="Netlify" /><img src="https://img.shields.io/badge/-Web3.js-%23F16822?logo=Web3.js&logoColor=white&style=for-the-badge" alt="Web3.js" /><img src="https://img.shields.io/badge/-IPFS-%2365C2CB?logo=IPFS&logoColor=white&style=for-the-badge" alt="IPFS" />
 
-In the project directory, you can run:
 
-### `yarn start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* [Stake Tokens](#stake-tokens)
+* [NFT Store](#nft-store)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Stake Tokens
 
-### `yarn test`
+<img src="./src/assets/images/stakepage.png" width="500">
+<br>
+Both players can stake tokens of their choice using MetaMask at the beginning of the game and the winner takes it all.
+<br>
+<img src="./src/assets/images/playpage.png" width="500">
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## NFT Store
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img src="./src/assets/images/nftpage.png" width="500">
+<br>
+User can use NFT Store to purchase NFTs of some of the best chess games ever played.
